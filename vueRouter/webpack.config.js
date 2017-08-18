@@ -5,9 +5,13 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: {
-        './js/main': './src/main.js',
-        './js/pageFar': path.resolve(__dirname, './src/js/pageFar.js'),
-        './js/pageSon': path.resolve(__dirname, './src/js/pageSon.js'),
+        './js/main': path.resolve(__dirname, './src/main.js'),
+        './js/dynamicRouter': path.resolve(__dirname, './src/dynamicRouter.js'),
+        './js/nestedRouter': path.resolve(__dirname, './src/nestedRouter.js'),
+        './js/nameRouter': path.resolve(__dirname, './src/nameRouter.js'),
+        './js/namedViews': path.resolve(__dirname, './src/namedViews.js'),
+        './js/transitionEffect': path.resolve(__dirname, './src/transitionEffect.js'),
+        './js/scrollActive': path.resolve(__dirname, './src/scrollActive.js'),
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

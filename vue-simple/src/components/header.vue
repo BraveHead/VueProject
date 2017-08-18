@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="app1">
         <ul>
             <li v-for="item in items">我的名字是 {{item.name}}, 我今年{{item.age}}岁了!</li>
         </ul>
@@ -7,7 +7,7 @@
 </template>
 <script>
     export default {
-        name: 'app',
+        name: 'app1',
         data() {
             return {
                 items: [
