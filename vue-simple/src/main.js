@@ -14,6 +14,8 @@ import home from  './component/home'
 import list from './component/project/list'
 import about from './component/about/about'
 import detailItem from './component/project/detailItem'
+import pay from './component/project/pay'
+import aboutItem from './component/about/aboutItem'
 
 //创建路由   配置
 const router = new VueRouter({
@@ -32,18 +34,27 @@ const router = new VueRouter({
       path:'/list',
       name: 'list',
       component: list,
-      children: [
-        {
-          path:'detailItem',
-          name: 'detailItem',
-          component: detailItem
-        }
-      ]
+
+    },
+    {
+      path: '/list/:itemId',
+      name:'detail',
+      component: detailItem
+    },
+    {
+      path: '/list/:itemId/pay',
+      name: 'pay',
+      component: pay
     },
     {
       path:'/about',
       name: 'about',
       component: about
+    },
+    {
+      path: '/about/:aboutId',
+      name:'aboutItem',
+      component: aboutItem
     }
   ]
 });

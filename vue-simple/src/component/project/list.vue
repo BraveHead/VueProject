@@ -3,10 +3,11 @@
     <ul>
       <li v-for="item in msgList">
         <a class="project-name">{{item.project}}</a>
-          <router-link to="/list/detailItem">点击购买</router-link>
+          <button>
+            <router-link :to='{name:"detail",params:{itemId: "detailItem" }}'>点击购买</router-link>
+          </button>
       </li>
     </ul>
-    <router-view></router-view>
   </div>
 
 </template>
@@ -64,6 +65,6 @@
     font-size: 16px;
   }
   a{
-    color: red;
+    color: #ffffff;
   }
 </style>

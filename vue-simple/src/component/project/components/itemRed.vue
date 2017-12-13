@@ -1,10 +1,12 @@
 <template>
+  <div>
     <ul id="itemRed">
-        <li v-for="item in redMsg">
-          <p>{{item.title}}</p>
-          <h3>{{item.number}}</h3>
-        </li>
+      <li v-for="item in redMsg">
+        <p>{{item.title}}</p>
+        <h3>{{item.number}}</h3>
+      </li>
     </ul>
+  </div>
 </template>
 <script>
     export default {
@@ -23,9 +25,14 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   #itemRed{
-    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: #ffffff;
+    height: auto;
+    top: 20px;
   }
   li{
     width: 200px;
@@ -33,12 +40,16 @@
     display: block;
     float: left;
     margin-left: 20px;
+    line-height: 20px;
+    border: 1px solid #adadad;
   }
   p{
     color: #494949;
+    padding-top: 20px;
   }
   h3 {
     color: red;
+    padding: 40px;
     font-size: 20px;
   }
 </style>

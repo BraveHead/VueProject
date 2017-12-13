@@ -3,7 +3,9 @@
       <span>标的名称：{{msg.title}} </span>
       <span>红包抵扣：{{msg.redNumber}} </span>
       <span>还需支付：{{msg.number}} </span>
-      <button>点击支付</button>
+      <button>
+        <router-link :to="{name:'pay',params:{ itemId:'detailItem'}, query:{payId: msg.number}}">点击支付</router-link>
+      </button>
   </div>
 </template>
 

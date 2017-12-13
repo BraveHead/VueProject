@@ -1,6 +1,6 @@
 <template>
     <div id="detailItem">
-      123123123
+      <div class="paramsID">{{ this.$route.params.itemId }}</div>
        <itemContent></itemContent>
        <itemRed></itemRed>
        <itemBuy></itemBuy>
@@ -26,7 +26,14 @@
 </script>
 
 <style scoped>
+  .paramsID{
+    width: 100%;
+    height: 100px;
+    background-color: yellow;
+    color: red;
+  }
 #detailItem{
+  position: relative;
   width: 100%;
   height: 800px;
   background-color: red;

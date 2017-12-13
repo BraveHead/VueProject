@@ -2,7 +2,7 @@
   <div id="about">
       <ul>
           <li v-for="item in aboutList">
-              <router-link :to="item.path">{{item.title}}</router-link>
+              <router-link :to="{name:'aboutItem',params:{aboutId: 'aboutItem'},query: {type: item.type} }">{{item.title}}</router-link>
           </li>
       </ul>
   </div>
@@ -14,11 +14,11 @@
         data() {
           return {
             aboutList: [
-              {'title': 'aboutOne','path':'aboutOne.html'},
-              {'title': 'aboutTwo','path':'aboutTwo.html'},
-              {'title': 'aboutThree','path':'aboutThree.html'},
-              {'title': 'aboutFour','path':'aboutFour.html'},
-              {'title': 'aboutFive','path':'aboutFive.html'},
+              {'title': 'aboutOne','type':'1'},
+              {'title': 'aboutTwo','type':'2'},
+              {'title': 'aboutThree','type':'3'},
+              {'title': 'aboutFour','type':'4'},
+              {'title': 'aboutFive','type':'5'},
             ]
           }
         }

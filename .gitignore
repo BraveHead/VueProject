@@ -1,6 +1,6 @@
 .DS_Store 
-vue-simple/node_modules/
-vue-simple/dist/
+/**/node_modules/
+/**/dist/
 npm-debug.log
 yarn-error.log
 
